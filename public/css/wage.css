@@ -1,0 +1,64 @@
+/* Wage Create Form Styles */
+
+.wage-create-container {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #ffffff;
+    color: #131313;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.wage-create-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #131313;
+}
+
+.wage-create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.wage-create-form label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #131313;
+}
+
+.wage-create-form input,
+.wage-create-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(199, 199, 199);
+    color: #131313;
+    transition: all 0.3s;
+}
+
+.wage-create-form input:focus,
+.wage-create-form textarea:focus {
+    outline: 2px solid #888;
+    background-color: #d4d4d4;
+}
+
+.wage-create-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #587973;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wage-create-form button:hover {
+    background-color: #777;
+}

@@ -8,9 +8,11 @@ use Illuminate\Http\Request;
 
 class BankController extends Controller
 {
-    public function index(){
-        return view('admin.bank.index',['banks' => Bank::all()]);
+    public function index() {
+        $banks = Bank::select('id', 'name', 'created_at as date')->get();
+        return view('admin.bank.index', ['banks' => $banks]);
     }
+
     public function create(){
         return view('admin.bank.create');
     }
